@@ -1,0 +1,20 @@
+git init
+git remote add origin https://github.com/hsosa09/20230605-HoracioSosa.git
+git branch -M main
+touch comandos.txt main.js index.html
+git add .
+git commit -m "commit 01 de HoracioSosa"
+git push origin main
+git branch feature
+git checkout feature
+mkdir Hardware Software SeguridadInformatica
+touch Hardware/resumen.txt Software/resumen.txt SeguridadInformatica/resumen.txt
+git add .
+git commit -m "commit 02 de HoracioSosa"
+git push origin feature
+git checkout main
+mv main.js resumenHardware.txt
+mv index.html resumenSoftware.txt
+git add .
+git commit -m "commit 03 de HoracioSosa"
+git push origin main
